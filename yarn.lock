@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@alugha/ima@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@alugha/ima/-/ima-2.1.0.tgz#f9569fe6b955be7f2472df195527d63b210d34a1"
+  integrity sha512-gGMWR9QlSJQR4G8p8nYRR/NHSzCCSLq7Q82Xr0BK154nNCfhykpjqr/hGVZdpFaPecyxEMDP3aSp2dzM421KRA==
+
 "@babel/runtime@^7.20.7":
   version "7.21.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"

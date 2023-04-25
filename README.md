@@ -1,6 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Your challenge
 
-## Getting Started
+Here you're presented a page primed to load a video ad from our ad manager using a VAST tag url. Your challenge has two parts:
+
+- Incorporate the key-value array from our `adManager` into the VAST tag request. [For more on how to do this, see here.](https://support.google.com/admanager/answer/1080597?sjid=16700415470357656413-NA) Build your function in the `buildVASTURL.ts` file. You should see your ad display once your key-values, in particular `campaign`, are correctly added to the url. In this case all of the key-values are hardcoded, but you should assume that the `keyValues` object can have both arbitrary keys and values (see the `QAdManager` type to infer what's allowed.)
+
+- If you successfully implement that, try adding a countdown timer. Start in the commented section of `videoHelper.ts`. Assuming you can get an integer value for the number of seconds left, you can use the `formatCountdown` function to format to seconds properly. If you have time to clean up visually, you can center the video horizontally and vertically, then try to put your timer in the lower-left corner of the video.
+
+The rest of this the explainer is for the [Next.js](https://nextjs.org/) project that this challenge is based on.
 
 First, run the development server:
 
@@ -14,14 +20,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -30,9 +28,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
